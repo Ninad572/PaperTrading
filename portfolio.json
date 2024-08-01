@@ -1,0 +1,14 @@
+[
+    {
+        "Stock": "INFY.NS",
+        "Quantity": 10,
+        "Buy Price": 1852.5999755859375,
+        "Buy Date": "2024-08-01"
+    },
+    {
+        "Stock": "TCS.NS",
+        "Quantity": 11,
+        "Buy Price": 4397.10009765625,
+        "Buy Date": "2024-08-01"
+    }
+]
