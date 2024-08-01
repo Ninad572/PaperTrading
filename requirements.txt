@@ -1,10 +1,6 @@
 streamlit
-requests
 yfinance
 pandas
 datetime
-matplotlib
-bs4
-textblob
 json
 os
