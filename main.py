@@ -115,7 +115,7 @@ def main():
                     'Buy Price': latest_price,
                     'Buy Date': datetime.now().strftime("%Y-%m-%d")
                 })
-                save_portfolio(st.session_state.portfolio)
+                save_portfolio(st.session_state.portfolio)  # Save after updating the portfolio
                 st.success(f"Bought {quantity_to_buy} shares of {stock_symbol} at ₹{latest_price:.2f} each.")
 
             # Display portfolio after buying
@@ -150,7 +150,7 @@ def main():
                                         # Optionally, remove entry if quantity is zero
                                         # st.session_state.portfolio.remove(entry)
                                         pass
-                                    save_portfolio(st.session_state.portfolio)
+                                    save_portfolio(st.session_state.portfolio)  # Save after updating the portfolio
                                     st.success(f"Sold {quantity_to_sell} shares of {stock_to_sell} at ₹{sell_price:.2f} each. Profit/Loss: ₹{profit_loss:.2f}")
                                     break
                                 else:
@@ -169,7 +169,7 @@ def main():
     # Clear Portfolio button
     if st.button("Clear Portfolio"):
         st.session_state.portfolio = []
-        save_portfolio(st.session_state.portfolio)
+        save_portfolio(st.session_state.portfolio)  # Save after clearing the portfolio
         st.success("Portfolio cleared.")
         # Clear portfolio display
         st.empty()
